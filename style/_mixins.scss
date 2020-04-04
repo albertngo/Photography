@@ -1,0 +1,17 @@
+@mixin element($elementName){
+    &__#{$elementName}{
+        @content;
+    }
+}
+
+@mixin modify($modifyName){
+    &__#{$modifyName}{
+        @content;
+    }
+}
+
+@mixin display($pixels){
+    @media (min-width:#{$pixels}){
+        @content;
+    }
+}
